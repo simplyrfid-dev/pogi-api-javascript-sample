@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="styles.css">
+  <script src="Script.js"></script>
+</head>
+<body>
+
+  <div class="sidenav">
+    <a href="index.html">Home</a>
+    <a href="get-token.html">1. Get Token</a>
+    <a href="history.html">2. History</a>
+    <a href="location.html">3. Location</a>
+    <a href="#">4. Create Quick Tag</a>
+    <a href="editTag.html">5. Edit Tag</a>
+  </div>
+
+  <div class="content">
+    <h2>Create a Quick Tag</h2>
+    <p>In this demo, a quick tag will be created using the following steps:</p>
+    <ol>
+      <li>Delete tag using /id-delete</li>
+      <li>Check if tag exists using /id-exists</li>
+      <li>Check if tag has a deleted state using /id-deleted</li>
+      <li>Remove tag from its deleted state using /id-undelete (Skip if it has no deleted state)</li>
+      <li>Add new tag along with its information using /id-add</li>
+      <li>Confirm if tag is added using /id-get</li>
+    </ol>
+
+    <button type="button" onclick="addTag()">Add Tag</button>
+    <p>1. /id-delete output:</p>
+    <div class="output"><pre id="deletetagOutput"> </pre></div>
+    <p>2. /id-exists output:</p>
+    <div class="output"><pre id="checktagOutput"> </pre></div>
+    <p>3. /id-deleted output:</p>
+    <div class="output"><pre id="deletedtagOutput"> </pre></div>
+    <p>4. /id-undelete output:</p>
+    <div class="output"><pre id="undeletetagOutput"> </pre></div>
+    <p>5. /id-add output:</p>
+    <div class="output"><pre id="addtagOutput"> </pre></div>
+    <p>6. /id-get output:</p>
+    <div class="output"><pre id="gettagOutput"> </pre></div>
+  </div>
+
+</body>
+</html>

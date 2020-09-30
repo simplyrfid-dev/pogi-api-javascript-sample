@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="styles.css">
+  <script src="Script.js"></script>
+</head>
+<body>
+
+<div class="sidenav">
+  <a href="index.html">Home</a>
+  <a href="get-token.html">1. Get Token</a>
+  <a href="history.html">2. History</a>
+  <a href="location.html">3. Location</a>
+  <a href="quickTag.html">4. Create Quick Tag</a>
+  <a href="#">5. Edit Tag</a>
+</div>
+  
+  <div class="content">
+    <h2>Edit a Quick Tag</h2>
+    <p>In this demo, a quick tag will be edited using the following steps:</p>
+    <ol>
+      <li>Update tag information using /id-update</li>
+      <li>Confirm if tag is updated using /id-get</li>
+    </ol>
+
+    <button type="button" onclick="editTag()">Edit Tag</button>
+    <p>1. /id-update output:</p>
+    <div class="output"><pre id="edittagOutput"> </pre></div>
+    <p>2. /id-get output:</p>
+    <div class="output"><pre id="gettagOutput"> </pre></div>
+  </div>
+
+</body>
+</html>
